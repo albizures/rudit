@@ -1,0 +1,15 @@
+{
+  "name": "rudit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.1.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.13",
+    "typescript": "^3.7.2"
+  }
+}
