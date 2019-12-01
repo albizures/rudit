@@ -12,4 +12,6 @@ export interface Verb {
   femininePast: Word;
   neuterPast: Word;
   pluralPast: Word;
+  imperativeInformal: Word;
+  imperativeFormal: Word;
 }

@@ -15,6 +15,8 @@ const read: Verb = {
   femininePast: Word('смотре́ла', 5),
   neuterPast: Word('смотре́ло', 5),
   pluralPast: Word('смотре́ли', 5),
+  imperativeInformal: Word('смотри́', 5),
+  imperativeFormal: Word('смотри́те', 5),
 };
 
 export default read;

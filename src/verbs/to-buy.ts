@@ -15,6 +15,8 @@ const read: Verb = {
   femininePast: Word('покупа́ла', stress),
   neuterPast: Word('покупа́ло', stress),
   pluralPast: Word('покупа́ли', stress),
+  imperativeInformal: Word('покупай', stress),
+  imperativeFormal: Word('покупайте', stress),
 };
 
 export default read;
