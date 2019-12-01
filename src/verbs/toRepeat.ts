@@ -3,7 +3,7 @@ import { Word } from '../utils/Word';
 
 const stress = 6;
 
-const read: Verb = {
+const toRepeat: Verb = {
   name: Word('повторять', stress),
   singular1stPerson: Word('повторя́ю', stress),
   singular2ndPerson: Word('повторя́ешь', stress),
@@ -19,4 +19,4 @@ const read: Verb = {
   imperativeFormal: Word('повторя́йте', stress),
 };
 
-export default read;
+export { toRepeat };
