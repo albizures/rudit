@@ -15,3 +15,18 @@ export interface Verb {
   imperativeInformal: Word;
   imperativeFormal: Word;
 }
+
+export const verbConjugations: (keyof Verb)[] = [
+  'singular1stPerson',
+  'singular2ndPerson',
+  'singular3rdPerson',
+  'plural1stPerson',
+  'plural2ndPerson',
+  'plural3rdPerson',
+  'masculinePast',
+  'femininePast',
+  'neuterPast',
+  'pluralPast',
+  'imperativeInformal',
+  'imperativeFormal',
+];

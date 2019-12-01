@@ -7,8 +7,10 @@ interface Word {
 
 const Word = memoize(
   (text: string, stress: number): Word => {
-    if (text.length > stress) {
-      throw new Error('Invalid stress');
+    if (text.length < stress) {
+      throw new Error(`Invalid stress 
+    Word: ${text} (text.length) - Stress: ${stress} 
+      `);
     }
 
     return {

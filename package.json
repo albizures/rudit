@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
+    "@chakra-ui/core": "^0.4.1",
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "emotion-theming": "^10.0.19",
     "lodash.memoize": "^4.1.2",
     "next": "^9.1.4",
     "react": "^16.12.0",
@@ -11,6 +20,7 @@
   },
   "devDependencies": {
     "@types/lodash.memoize": "^4.1.6",
+    "@types/node": "^12.12.14",
     "@types/react": "^16.9.13",
     "typescript": "^3.7.2"
   }
