@@ -44,6 +44,13 @@ const Index: React.FC = () => {
       <button onClick={onAddPronoun}>add pronoun</button>
       <button onClick={onRemovePronoun}>remove pronoun</button>
       <button onClick={onScramble}>Scramble</button>
+
+      <div>
+        <h3>Prepositional case</h3>
+        <p>
+          it's always used with propositions, and they are "о"(about), "в" (where) y "на" (where)
+        </p>
+      </div>
     </div>
   );
 };
