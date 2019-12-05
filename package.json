@@ -6,12 +6,16 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "get:verb": "ts-node --project scripts/tsconfig.json scripts/get-verb.ts",
+    "get:noun": "ts-node --project scripts/tsconfig.json scripts/get-noun.ts"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.4.1",
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
     "emotion-theming": "^10.0.19",
     "lodash.memoize": "^4.1.2",
     "next": "^9.1.4",
@@ -19,9 +23,12 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.15",
     "@types/lodash.memoize": "^4.1.6",
     "@types/node": "^12.12.14",
     "@types/react": "^16.9.13",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.2"
   }
 }
