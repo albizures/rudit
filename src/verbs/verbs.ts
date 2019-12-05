@@ -19,3 +19,7 @@ export * from './toWait';
 export * from './toWork';
 export * from './toWrite';
 export * from './toCry';
+export * from './toGoAndBackInVehicle';
+export * from './toGoAndBackWalking';
+export * from './toGoInVehicle';
+export * from './toGoWalking';
