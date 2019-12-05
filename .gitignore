@@ -1,3 +1,4 @@
 node_modules
 .next
-src/verbs/*-gen.ts
+src/**/*-gen.ts
+src/**/*-gen.ts
