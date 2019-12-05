@@ -18,3 +18,4 @@ export * from './toUnderstand';
 export * from './toWait';
 export * from './toWork';
 export * from './toWrite';
+export * from './toCry';
