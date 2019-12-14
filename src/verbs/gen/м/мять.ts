@@ -8,7 +8,7 @@ const мять: PerfectVerb = {
   singular2ndPerson: Word('мнёшь', 2),
   singular3rdPerson: Word('мнёт', 2),
   plural1stPerson: Word('мнём', 2),
-  plural2ndPerson: Word('мнёте', 4),
+  plural2ndPerson: Word('мнёте', 2),
   plural3rdPerson: Word('мнут', 2),
   masculinePast: Word('мял', 1),
   femininePast: Word('мяла', 1),

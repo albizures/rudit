@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const захлёстывать: PerfectVerb = {
-  name: Word('захлёстывать', 1),
-  singular1stPerson: Word('захлёстываю', 1),
-  singular2ndPerson: Word('захлёстываешь', 1),
-  singular3rdPerson: Word('захлёстывает', 1),
-  plural1stPerson: Word('захлёстываем', 1),
-  plural2ndPerson: Word('захлёстываете', 1),
-  plural3rdPerson: Word('захлёстывают', 1),
-  masculinePast: Word('захлёстывал', 1),
-  femininePast: Word('захлёстывала', 1),
-  neuterPast: Word('захлёстывало', 1),
-  pluralPast: Word('захлёстывали', 1),
-  imperativeInformal: Word('захлёстывай', 1),
-  imperativeFormal: Word('захлёстывайте', 1),
+  name: Word('захлёстывать', 4),
+  singular1stPerson: Word('захлёстываю', 4),
+  singular2ndPerson: Word('захлёстываешь', 4),
+  singular3rdPerson: Word('захлёстывает', 4),
+  plural1stPerson: Word('захлёстываем', 4),
+  plural2ndPerson: Word('захлёстываете', 4),
+  plural3rdPerson: Word('захлёстывают', 4),
+  masculinePast: Word('захлёстывал', 4),
+  femininePast: Word('захлёстывала', 4),
+  neuterPast: Word('захлёстывало', 4),
+  pluralPast: Word('захлёстывали', 4),
+  imperativeInformal: Word('захлёстывай', 4),
+  imperativeFormal: Word('захлёстывайте', 4),
   imperfect: [],
 };
 

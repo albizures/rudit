@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const зашлёпать: PerfectVerb = {
-  name: Word('зашлёпать', 1),
-  singular1stPerson: Word('зашлёпаю', 1),
-  singular2ndPerson: Word('зашлёпаешь', 1),
-  singular3rdPerson: Word('зашлёпает', 1),
-  plural1stPerson: Word('зашлёпаем', 1),
-  plural2ndPerson: Word('зашлёпаете', 1),
-  plural3rdPerson: Word('зашлёпают', 1),
-  masculinePast: Word('зашлёпал', 1),
-  femininePast: Word('зашлёпала', 1),
-  neuterPast: Word('зашлёпало', 1),
-  pluralPast: Word('зашлёпали', 1),
-  imperativeInformal: Word('зашлёпай', 1),
-  imperativeFormal: Word('зашлёпайте', 1),
+  name: Word('зашлёпать', 4),
+  singular1stPerson: Word('зашлёпаю', 4),
+  singular2ndPerson: Word('зашлёпаешь', 4),
+  singular3rdPerson: Word('зашлёпает', 4),
+  plural1stPerson: Word('зашлёпаем', 4),
+  plural2ndPerson: Word('зашлёпаете', 4),
+  plural3rdPerson: Word('зашлёпают', 4),
+  masculinePast: Word('зашлёпал', 4),
+  femininePast: Word('зашлёпала', 4),
+  neuterPast: Word('зашлёпало', 4),
+  pluralPast: Word('зашлёпали', 4),
+  imperativeInformal: Word('зашлёпай', 4),
+  imperativeFormal: Word('зашлёпайте', 4),
   imperfect: [],
 };
 

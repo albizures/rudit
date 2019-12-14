@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const причёсываться: PerfectVerb = {
-  name: Word('причёсываться', 8),
-  singular1stPerson: Word('причёсываюсь', 8),
-  singular2ndPerson: Word('причёсываешься', 8),
-  singular3rdPerson: Word('причёсывается', 8),
-  plural1stPerson: Word('причёсываемся', 8),
-  plural2ndPerson: Word('причёсываетесь', 8),
-  plural3rdPerson: Word('причёсываются', 8),
-  masculinePast: Word('причёсывался', 8),
-  femininePast: Word('причёсывалась', 8),
-  neuterPast: Word('причёсывалось', 8),
-  pluralPast: Word('причёсывались', 8),
-  imperativeInformal: Word('причёсывайся', 8),
-  imperativeFormal: Word('причёсывайтесь', 8),
+  name: Word('причёсываться', 4),
+  singular1stPerson: Word('причёсываюсь', 4),
+  singular2ndPerson: Word('причёсываешься', 4),
+  singular3rdPerson: Word('причёсывается', 4),
+  plural1stPerson: Word('причёсываемся', 4),
+  plural2ndPerson: Word('причёсываетесь', 4),
+  plural3rdPerson: Word('причёсываются', 4),
+  masculinePast: Word('причёсывался', 4),
+  femininePast: Word('причёсывалась', 4),
+  neuterPast: Word('причёсывалось', 4),
+  pluralPast: Word('причёсывались', 4),
+  imperativeInformal: Word('причёсывайся', 4),
+  imperativeFormal: Word('причёсывайтесь', 4),
   imperfect: [],
 };
 

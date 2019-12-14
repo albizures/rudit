@@ -8,7 +8,7 @@ const жечь: PerfectVerb = {
   singular2ndPerson: Word('жжёшь', 2),
   singular3rdPerson: Word('жжёт', 2),
   plural1stPerson: Word('жжём', 2),
-  plural2ndPerson: Word('жжёте', 4),
+  plural2ndPerson: Word('жжёте', 2),
   plural3rdPerson: Word('жгут', 2),
   masculinePast: Word('жёг', 1),
   femininePast: Word('жгла', 3),

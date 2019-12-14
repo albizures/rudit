@@ -3,7 +3,7 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const подмётывать: PerfectVerb = {
-  name: Word('подмётывать', 8),
+  name: Word('подмётывать', 4),
   singular1stPerson: Word('', -1),
   singular2ndPerson: Word('', -1),
   singular3rdPerson: Word('', -1),

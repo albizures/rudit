@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const расхлёбывать: PerfectVerb = {
-  name: Word('расхлёбывать', 1),
-  singular1stPerson: Word('расхлёбываю', 1),
-  singular2ndPerson: Word('расхлёбываешь', 1),
-  singular3rdPerson: Word('расхлёбывает', 1),
-  plural1stPerson: Word('расхлёбываем', 1),
-  plural2ndPerson: Word('расхлёбываете', 1),
-  plural3rdPerson: Word('расхлёбывают', 1),
-  masculinePast: Word('расхлёбывал', 1),
-  femininePast: Word('расхлёбывала', 1),
-  neuterPast: Word('расхлёбывало', 1),
-  pluralPast: Word('расхлёбывали', 1),
-  imperativeInformal: Word('расхлёбывай', 1),
-  imperativeFormal: Word('расхлёбывайте', 1),
+  name: Word('расхлёбывать', 5),
+  singular1stPerson: Word('расхлёбываю', 5),
+  singular2ndPerson: Word('расхлёбываешь', 5),
+  singular3rdPerson: Word('расхлёбывает', 5),
+  plural1stPerson: Word('расхлёбываем', 5),
+  plural2ndPerson: Word('расхлёбываете', 5),
+  plural3rdPerson: Word('расхлёбывают', 5),
+  masculinePast: Word('расхлёбывал', 5),
+  femininePast: Word('расхлёбывала', 5),
+  neuterPast: Word('расхлёбывало', 5),
+  pluralPast: Word('расхлёбывали', 5),
+  imperativeInformal: Word('расхлёбывай', 5),
+  imperativeFormal: Word('расхлёбывайте', 5),
   imperfect: [],
 };
 

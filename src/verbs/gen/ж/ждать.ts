@@ -8,7 +8,7 @@ const ждать: PerfectVerb = {
   singular2ndPerson: Word('ждёшь', 2),
   singular3rdPerson: Word('ждёт', 2),
   plural1stPerson: Word('ждём', 2),
-  plural2ndPerson: Word('ждёте', 4),
+  plural2ndPerson: Word('ждёте', 2),
   plural3rdPerson: Word('ждут', 2),
   masculinePast: Word('ждал', 2),
   femininePast: Word('ждала', 4),

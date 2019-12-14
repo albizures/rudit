@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const позёвывать: PerfectVerb = {
-  name: Word('позёвывать', 7),
-  singular1stPerson: Word('позёвываю', 7),
-  singular2ndPerson: Word('позёвываешь', 7),
-  singular3rdPerson: Word('позёвывает', 7),
-  plural1stPerson: Word('позёвываем', 7),
-  plural2ndPerson: Word('позёвываете', 7),
-  plural3rdPerson: Word('позёвывают', 7),
-  masculinePast: Word('позёвывал', 7),
-  femininePast: Word('позёвывала', 7),
-  neuterPast: Word('позёвывало', 7),
-  pluralPast: Word('позёвывали', 7),
-  imperativeInformal: Word('позёвывай', 7),
-  imperativeFormal: Word('позёвывайте', 7),
+  name: Word('позёвывать', 3),
+  singular1stPerson: Word('позёвываю', 3),
+  singular2ndPerson: Word('позёвываешь', 3),
+  singular3rdPerson: Word('позёвывает', 3),
+  plural1stPerson: Word('позёвываем', 3),
+  plural2ndPerson: Word('позёвываете', 3),
+  plural3rdPerson: Word('позёвывают', 3),
+  masculinePast: Word('позёвывал', 3),
+  femininePast: Word('позёвывала', 3),
+  neuterPast: Word('позёвывало', 3),
+  pluralPast: Word('позёвывали', 3),
+  imperativeInformal: Word('позёвывай', 3),
+  imperativeFormal: Word('позёвывайте', 3),
   imperfect: [],
 };
 

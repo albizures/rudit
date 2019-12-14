@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const отлёживаться: PerfectVerb = {
-  name: Word('отлёживаться', 7),
-  singular1stPerson: Word('отлёживаюсь', 7),
-  singular2ndPerson: Word('отлёживаешься', 7),
-  singular3rdPerson: Word('отлёживается', 7),
-  plural1stPerson: Word('отлёживаемся', 7),
-  plural2ndPerson: Word('отлёживаетесь', 7),
-  plural3rdPerson: Word('отлёживаются', 7),
-  masculinePast: Word('отлёживался', 7),
-  femininePast: Word('отлёживалась', 7),
-  neuterPast: Word('отлёживалось', 7),
-  pluralPast: Word('отлёживались', 7),
-  imperativeInformal: Word('отлёживайся', 7),
-  imperativeFormal: Word('отлёживайтесь', 7),
+  name: Word('отлёживаться', 3),
+  singular1stPerson: Word('отлёживаюсь', 3),
+  singular2ndPerson: Word('отлёживаешься', 3),
+  singular3rdPerson: Word('отлёживается', 3),
+  plural1stPerson: Word('отлёживаемся', 3),
+  plural2ndPerson: Word('отлёживаетесь', 3),
+  plural3rdPerson: Word('отлёживаются', 3),
+  masculinePast: Word('отлёживался', 3),
+  femininePast: Word('отлёживалась', 3),
+  neuterPast: Word('отлёживалось', 3),
+  pluralPast: Word('отлёживались', 3),
+  imperativeInformal: Word('отлёживайся', 3),
+  imperativeFormal: Word('отлёживайтесь', 3),
   imperfect: [],
 };
 

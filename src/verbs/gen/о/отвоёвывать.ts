@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const отвоёвывать: PerfectVerb = {
-  name: Word('отвоёвывать', 8),
-  singular1stPerson: Word('отвоёвываю', 8),
-  singular2ndPerson: Word('отвоёвываешь', 8),
-  singular3rdPerson: Word('отвоёвывает', 8),
-  plural1stPerson: Word('отвоёвываем', 8),
-  plural2ndPerson: Word('отвоёвываете', 8),
-  plural3rdPerson: Word('отвоёвывают', 8),
-  masculinePast: Word('отвоёвывал', 8),
-  femininePast: Word('отвоёвывала', 8),
-  neuterPast: Word('отвоёвывало', 8),
-  pluralPast: Word('отвоёвывали', 8),
-  imperativeInformal: Word('отвоёвывай', 8),
-  imperativeFormal: Word('отвоёвывайте', 8),
+  name: Word('отвоёвывать', 4),
+  singular1stPerson: Word('отвоёвываю', 4),
+  singular2ndPerson: Word('отвоёвываешь', 4),
+  singular3rdPerson: Word('отвоёвывает', 4),
+  plural1stPerson: Word('отвоёвываем', 4),
+  plural2ndPerson: Word('отвоёвываете', 4),
+  plural3rdPerson: Word('отвоёвывают', 4),
+  masculinePast: Word('отвоёвывал', 4),
+  femininePast: Word('отвоёвывала', 4),
+  neuterPast: Word('отвоёвывало', 4),
+  pluralPast: Word('отвоёвывали', 4),
+  imperativeInformal: Word('отвоёвывай', 4),
+  imperativeFormal: Word('отвоёвывайте', 4),
   imperfect: [],
 };
 

@@ -8,7 +8,7 @@ const льнуть: PerfectVerb = {
   singular2ndPerson: Word('льнёшь', 3),
   singular3rdPerson: Word('льнёт', 3),
   plural1stPerson: Word('льнём', 3),
-  plural2ndPerson: Word('льнёте', 5),
+  plural2ndPerson: Word('льнёте', 3),
   plural3rdPerson: Word('льнут', 3),
   masculinePast: Word('льнул', 3),
   femininePast: Word('льнула', 3),

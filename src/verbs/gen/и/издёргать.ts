@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const издёргать: PerfectVerb = {
-  name: Word('издёргать', 6),
-  singular1stPerson: Word('издёргаю', 6),
-  singular2ndPerson: Word('издёргаешь', 6),
-  singular3rdPerson: Word('издёргает', 6),
-  plural1stPerson: Word('издёргаем', 6),
-  plural2ndPerson: Word('издёргаете', 6),
-  plural3rdPerson: Word('издёргают', 6),
-  masculinePast: Word('издёргал', 6),
-  femininePast: Word('издёргала', 6),
-  neuterPast: Word('издёргало', 6),
-  pluralPast: Word('издёргали', 6),
-  imperativeInformal: Word('издёргай', 6),
-  imperativeFormal: Word('издёргайте', 6),
+  name: Word('издёргать', 3),
+  singular1stPerson: Word('издёргаю', 3),
+  singular2ndPerson: Word('издёргаешь', 3),
+  singular3rdPerson: Word('издёргает', 3),
+  plural1stPerson: Word('издёргаем', 3),
+  plural2ndPerson: Word('издёргаете', 3),
+  plural3rdPerson: Word('издёргают', 3),
+  masculinePast: Word('издёргал', 3),
+  femininePast: Word('издёргала', 3),
+  neuterPast: Word('издёргало', 3),
+  pluralPast: Word('издёргали', 3),
+  imperativeInformal: Word('издёргай', 3),
+  imperativeFormal: Word('издёргайте', 3),
   imperfect: [],
 };
 

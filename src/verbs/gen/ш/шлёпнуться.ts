@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const шлёпнуться: PerfectVerb = {
-  name: Word('шлёпнуться', 9),
-  singular1stPerson: Word('шлёпнусь', 5),
-  singular2ndPerson: Word('шлёпнешься', 5),
-  singular3rdPerson: Word('шлёпнется', 5),
-  plural1stPerson: Word('шлёпнемся', 5),
-  plural2ndPerson: Word('шлёпнетесь', 5),
-  plural3rdPerson: Word('шлёпнутся', 8),
-  masculinePast: Word('шлёпнулся', 8),
-  femininePast: Word('шлёпнулась', 7),
-  neuterPast: Word('шлёпнулось', 7),
-  pluralPast: Word('шлёпнулись', 7),
-  imperativeInformal: Word('шлёпнись', 5),
-  imperativeFormal: Word('шлёпнитесь', 7),
+  name: Word('шлёпнуться', 2),
+  singular1stPerson: Word('шлёпнусь', 2),
+  singular2ndPerson: Word('шлёпнешься', 2),
+  singular3rdPerson: Word('шлёпнется', 2),
+  plural1stPerson: Word('шлёпнемся', 2),
+  plural2ndPerson: Word('шлёпнетесь', 2),
+  plural3rdPerson: Word('шлёпнутся', 2),
+  masculinePast: Word('шлёпнулся', 2),
+  femininePast: Word('шлёпнулась', 2),
+  neuterPast: Word('шлёпнулось', 2),
+  pluralPast: Word('шлёпнулись', 2),
+  imperativeInformal: Word('шлёпнись', 2),
+  imperativeFormal: Word('шлёпнитесь', 2),
   imperfect: [],
 };
 

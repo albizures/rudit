@@ -10,7 +10,7 @@ const залечь: PerfectVerb = {
   plural1stPerson: Word('заляжем', 3),
   plural2ndPerson: Word('заляжете', 3),
   plural3rdPerson: Word('залягут', 3),
-  masculinePast: Word('залёг', 1),
+  masculinePast: Word('залёг', 3),
   femininePast: Word('залегла', 6),
   neuterPast: Word('залегло', 6),
   pluralPast: Word('залегли', 6),

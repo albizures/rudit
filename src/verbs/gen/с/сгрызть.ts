@@ -8,7 +8,7 @@ const сгрызть: PerfectVerb = {
   singular2ndPerson: Word('сгрызёшь', 5),
   singular3rdPerson: Word('сгрызёт', 5),
   plural1stPerson: Word('сгрызём', 5),
-  plural2ndPerson: Word('сгрызёте', 7),
+  plural2ndPerson: Word('сгрызёте', 5),
   plural3rdPerson: Word('сгрызут', 5),
   masculinePast: Word('сгрыз', 3),
   femininePast: Word('сгрызла', 3),

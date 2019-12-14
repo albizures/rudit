@@ -8,7 +8,7 @@ const лить: PerfectVerb = {
   singular2ndPerson: Word('льёшь', 2),
   singular3rdPerson: Word('льёт', 2),
   plural1stPerson: Word('льём', 2),
-  plural2ndPerson: Word('льёте', 4),
+  plural2ndPerson: Word('льёте', 2),
   plural3rdPerson: Word('льют', 2),
   masculinePast: Word('лил', 1),
   femininePast: Word('лила', 3),

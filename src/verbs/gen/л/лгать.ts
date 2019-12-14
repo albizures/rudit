@@ -8,7 +8,7 @@ const лгать: PerfectVerb = {
   singular2ndPerson: Word('лжёшь', 2),
   singular3rdPerson: Word('лжёт', 2),
   plural1stPerson: Word('лжём', 2),
-  plural2ndPerson: Word('лжёте', 4),
+  plural2ndPerson: Word('лжёте', 2),
   plural3rdPerson: Word('лгут', 2),
   masculinePast: Word('лгал', 2),
   femininePast: Word('лгала', 4),

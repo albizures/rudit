@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const шлёпать: PerfectVerb = {
-  name: Word('шлёпать', 4),
-  singular1stPerson: Word('шлёпаю', 4),
-  singular2ndPerson: Word('шлёпаешь', 4),
-  singular3rdPerson: Word('шлёпает', 4),
-  plural1stPerson: Word('шлёпаем', 4),
-  plural2ndPerson: Word('шлёпаете', 4),
-  plural3rdPerson: Word('шлёпают', 4),
-  masculinePast: Word('шлёпал', 4),
-  femininePast: Word('шлёпала', 4),
-  neuterPast: Word('шлёпало', 4),
-  pluralPast: Word('шлёпали', 4),
-  imperativeInformal: Word('шлёпай', 4),
-  imperativeFormal: Word('шлёпайте', 4),
+  name: Word('шлёпать', 2),
+  singular1stPerson: Word('шлёпаю', 2),
+  singular2ndPerson: Word('шлёпаешь', 2),
+  singular3rdPerson: Word('шлёпает', 2),
+  plural1stPerson: Word('шлёпаем', 2),
+  plural2ndPerson: Word('шлёпаете', 2),
+  plural3rdPerson: Word('шлёпают', 2),
+  masculinePast: Word('шлёпал', 2),
+  femininePast: Word('шлёпала', 2),
+  neuterPast: Word('шлёпало', 2),
+  pluralPast: Word('шлёпали', 2),
+  imperativeInformal: Word('шлёпай', 2),
+  imperativeFormal: Word('шлёпайте', 2),
   imperfect: [],
 };
 

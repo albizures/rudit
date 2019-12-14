@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const обнадёжить: PerfectVerb = {
-  name: Word('обнадёжить', 3),
-  singular1stPerson: Word('обнадёжу', 3),
-  singular2ndPerson: Word('обнадёжишь', 3),
-  singular3rdPerson: Word('обнадёжит', 3),
-  plural1stPerson: Word('обнадёжим', 3),
-  plural2ndPerson: Word('обнадёжите', 3),
-  plural3rdPerson: Word('обнадёжат', 3),
-  masculinePast: Word('обнадёжил', 3),
-  femininePast: Word('обнадёжила', 3),
-  neuterPast: Word('обнадёжило', 3),
-  pluralPast: Word('обнадёжили', 3),
-  imperativeInformal: Word('обнадёжь', 3),
-  imperativeFormal: Word('обнадёжьте', 3),
+  name: Word('обнадёжить', 5),
+  singular1stPerson: Word('обнадёжу', 5),
+  singular2ndPerson: Word('обнадёжишь', 5),
+  singular3rdPerson: Word('обнадёжит', 5),
+  plural1stPerson: Word('обнадёжим', 5),
+  plural2ndPerson: Word('обнадёжите', 5),
+  plural3rdPerson: Word('обнадёжат', 5),
+  masculinePast: Word('обнадёжил', 5),
+  femininePast: Word('обнадёжила', 5),
+  neuterPast: Word('обнадёжило', 5),
+  pluralPast: Word('обнадёжили', 5),
+  imperativeInformal: Word('обнадёжь', 5),
+  imperativeFormal: Word('обнадёжьте', 5),
   imperfect: [],
 };
 

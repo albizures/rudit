@@ -8,7 +8,7 @@ const ткнуть: PerfectVerb = {
   singular2ndPerson: Word('ткнёшь', 3),
   singular3rdPerson: Word('ткнёт', 3),
   plural1stPerson: Word('ткнём', 3),
-  plural2ndPerson: Word('ткнёте', 5),
+  plural2ndPerson: Word('ткнёте', 3),
   plural3rdPerson: Word('ткнут', 3),
   masculinePast: Word('ткнул', 3),
   femininePast: Word('ткнула', 3),

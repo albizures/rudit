@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const захлёбываться: PerfectVerb = {
-  name: Word('захлёбываться', 1),
-  singular1stPerson: Word('захлёбываюсь', 1),
-  singular2ndPerson: Word('захлёбываешься', 1),
-  singular3rdPerson: Word('захлёбывается', 1),
-  plural1stPerson: Word('захлёбываемся', 1),
-  plural2ndPerson: Word('захлёбываетесь', 1),
-  plural3rdPerson: Word('захлёбываются', 1),
-  masculinePast: Word('захлёбывался', 1),
-  femininePast: Word('захлёбывалась', 1),
-  neuterPast: Word('захлёбывалось', 1),
-  pluralPast: Word('захлёбывались', 1),
-  imperativeInformal: Word('захлёбывайся', 1),
-  imperativeFormal: Word('захлёбывайтесь', 1),
+  name: Word('захлёбываться', 4),
+  singular1stPerson: Word('захлёбываюсь', 4),
+  singular2ndPerson: Word('захлёбываешься', 4),
+  singular3rdPerson: Word('захлёбывается', 4),
+  plural1stPerson: Word('захлёбываемся', 4),
+  plural2ndPerson: Word('захлёбываетесь', 4),
+  plural3rdPerson: Word('захлёбываются', 4),
+  masculinePast: Word('захлёбывался', 4),
+  femininePast: Word('захлёбывалась', 4),
+  neuterPast: Word('захлёбывалось', 4),
+  pluralPast: Word('захлёбывались', 4),
+  imperativeInformal: Word('захлёбывайся', 4),
+  imperativeFormal: Word('захлёбывайтесь', 4),
   imperfect: [],
 };
 

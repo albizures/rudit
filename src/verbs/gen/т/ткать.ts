@@ -8,7 +8,7 @@ const ткать: PerfectVerb = {
   singular2ndPerson: Word('ткёшь', 2),
   singular3rdPerson: Word('ткёт', 2),
   plural1stPerson: Word('ткём', 2),
-  plural2ndPerson: Word('ткёте', 4),
+  plural2ndPerson: Word('ткёте', 2),
   plural3rdPerson: Word('ткут', 2),
   masculinePast: Word('ткал', 2),
   femininePast: Word('ткала', 4),

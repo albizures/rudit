@@ -8,7 +8,7 @@ const слыть: PerfectVerb = {
   singular2ndPerson: Word('слывёшь', 4),
   singular3rdPerson: Word('слывёт', 4),
   plural1stPerson: Word('слывём', 4),
-  plural2ndPerson: Word('слывёте', 6),
+  plural2ndPerson: Word('слывёте', 4),
   plural3rdPerson: Word('слывут', 4),
   masculinePast: Word('слыл', 2),
   femininePast: Word('слыла', 4),

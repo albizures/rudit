@@ -8,7 +8,7 @@ const нырнуть: PerfectVerb = {
   singular2ndPerson: Word('нырнёшь', 4),
   singular3rdPerson: Word('нырнёт', 4),
   plural1stPerson: Word('нырнём', 4),
-  plural2ndPerson: Word('нырнёте', 6),
+  plural2ndPerson: Word('нырнёте', 4),
   plural3rdPerson: Word('нырнут', 4),
   masculinePast: Word('нырнул', 4),
   femininePast: Word('нырнула', 4),

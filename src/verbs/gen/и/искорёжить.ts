@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const искорёжить: PerfectVerb = {
-  name: Word('искорёжить', 0),
-  singular1stPerson: Word('искорёжу', 0),
-  singular2ndPerson: Word('искорёжишь', 0),
-  singular3rdPerson: Word('искорёжит', 0),
-  plural1stPerson: Word('искорёжим', 0),
-  plural2ndPerson: Word('искорёжите', 9),
-  plural3rdPerson: Word('искорёжат', 7),
-  masculinePast: Word('искорёжил', 0),
-  femininePast: Word('искорёжила', 9),
-  neuterPast: Word('искорёжило', 0),
-  pluralPast: Word('искорёжили', 0),
-  imperativeInformal: Word('искорёжь', 0),
-  imperativeFormal: Word('искорёжьте', 9),
+  name: Word('искорёжить', 5),
+  singular1stPerson: Word('искорёжу', 5),
+  singular2ndPerson: Word('искорёжишь', 5),
+  singular3rdPerson: Word('искорёжит', 5),
+  plural1stPerson: Word('искорёжим', 5),
+  plural2ndPerson: Word('искорёжите', 5),
+  plural3rdPerson: Word('искорёжат', 5),
+  masculinePast: Word('искорёжил', 5),
+  femininePast: Word('искорёжила', 5),
+  neuterPast: Word('искорёжило', 5),
+  pluralPast: Word('искорёжили', 5),
+  imperativeInformal: Word('искорёжь', 5),
+  imperativeFormal: Word('искорёжьте', 5),
   imperfect: [],
 };
 

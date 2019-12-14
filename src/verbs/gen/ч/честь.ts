@@ -8,7 +8,7 @@ const честь: PerfectVerb = {
   singular2ndPerson: Word('чтёшь', 2),
   singular3rdPerson: Word('чтёт', 2),
   plural1stPerson: Word('чтём', 2),
-  plural2ndPerson: Word('чтёте', 4),
+  plural2ndPerson: Word('чтёте', 2),
   plural3rdPerson: Word('чтут', 2),
   masculinePast: Word('чёл', 1),
   femininePast: Word('чла', 2),

@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const задёрнуть: PerfectVerb = {
-  name: Word('задёрнуть', 1),
-  singular1stPerson: Word('задёрну', 1),
-  singular2ndPerson: Word('задёрнешь', 1),
-  singular3rdPerson: Word('задёрнет', 1),
-  plural1stPerson: Word('задёрнем', 1),
-  plural2ndPerson: Word('задёрнете', 1),
-  plural3rdPerson: Word('задёрнут', 1),
-  masculinePast: Word('задёрнул', 1),
-  femininePast: Word('задёрнула', 1),
-  neuterPast: Word('задёрнуло', 1),
-  pluralPast: Word('задёрнули', 1),
-  imperativeInformal: Word('задёрни', 1),
-  imperativeFormal: Word('задёрните', 1),
+  name: Word('задёрнуть', 3),
+  singular1stPerson: Word('задёрну', 3),
+  singular2ndPerson: Word('задёрнешь', 3),
+  singular3rdPerson: Word('задёрнет', 3),
+  plural1stPerson: Word('задёрнем', 3),
+  plural2ndPerson: Word('задёрнете', 3),
+  plural3rdPerson: Word('задёрнут', 3),
+  masculinePast: Word('задёрнул', 3),
+  femininePast: Word('задёрнула', 3),
+  neuterPast: Word('задёрнуло', 3),
+  pluralPast: Word('задёрнули', 3),
+  imperativeInformal: Word('задёрни', 3),
+  imperativeFormal: Word('задёрните', 3),
   imperfect: [],
 };
 

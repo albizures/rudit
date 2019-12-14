@@ -8,7 +8,7 @@ const всплыть: PerfectVerb = {
   singular2ndPerson: Word('всплывёшь', 6),
   singular3rdPerson: Word('всплывёт', 6),
   plural1stPerson: Word('всплывём', 6),
-  plural2ndPerson: Word('всплывёте', 8),
+  plural2ndPerson: Word('всплывёте', 6),
   plural3rdPerson: Word('всплывут', 6),
   masculinePast: Word('всплыл', 4),
   femininePast: Word('всплыла', 6),

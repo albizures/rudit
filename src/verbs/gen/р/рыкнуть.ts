@@ -8,7 +8,7 @@ const рыкнуть: PerfectVerb = {
   singular2ndPerson: Word('рыкнёшь', 4),
   singular3rdPerson: Word('рыкнёт', 4),
   plural1stPerson: Word('рыкнём', 4),
-  plural2ndPerson: Word('рыкнёте', 6),
+  plural2ndPerson: Word('рыкнёте', 4),
   plural3rdPerson: Word('рыкнут', 4),
   masculinePast: Word('рыкнул', 4),
   femininePast: Word('рыкнула', 4),

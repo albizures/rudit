@@ -8,7 +8,7 @@ const швырнуть: PerfectVerb = {
   singular2ndPerson: Word('швырнёшь', 5),
   singular3rdPerson: Word('швырнёт', 5),
   plural1stPerson: Word('швырнём', 5),
-  plural2ndPerson: Word('швырнёте', 7),
+  plural2ndPerson: Word('швырнёте', 5),
   plural3rdPerson: Word('швырнут', 5),
   masculinePast: Word('швырнул', 5),
   femininePast: Word('швырнула', 5),

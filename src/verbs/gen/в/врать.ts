@@ -8,7 +8,7 @@ const врать: PerfectVerb = {
   singular2ndPerson: Word('врёшь', 2),
   singular3rdPerson: Word('врёт', 2),
   plural1stPerson: Word('врём', 2),
-  plural2ndPerson: Word('врёте', 4),
+  plural2ndPerson: Word('врёте', 2),
   plural3rdPerson: Word('врут', 2),
   masculinePast: Word('врал', 2),
   femininePast: Word('врала', 4),

@@ -8,7 +8,7 @@ const пнуть: PerfectVerb = {
   singular2ndPerson: Word('пнёшь', 2),
   singular3rdPerson: Word('пнёт', 2),
   plural1stPerson: Word('пнём', 2),
-  plural2ndPerson: Word('пнёте', 4),
+  plural2ndPerson: Word('пнёте', 2),
   plural3rdPerson: Word('пнут', 2),
   masculinePast: Word('пнул', 2),
   femininePast: Word('пнула', 2),

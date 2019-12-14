@@ -30,7 +30,7 @@ interface RawVerb {
 }
 
 const stress = "'";
-const stressAndVowels = [stress, 'а', 'е', 'ю', 'и', 'о', 'й', 'я', 'у', 'ё', 'э', 'ы'];
+const stressAndVowels = [stress, 'ё', 'а', 'е', 'ю', 'и', 'о', 'й', 'я', 'у', 'э', 'ы'];
 
 const getStress = (text: string): number => {
   for (const vowel of stressAndVowels) {

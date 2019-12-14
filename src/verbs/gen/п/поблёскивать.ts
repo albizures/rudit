@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const поблёскивать: PerfectVerb = {
-  name: Word('поблёскивать', 9),
-  singular1stPerson: Word('поблёскиваю', 9),
-  singular2ndPerson: Word('поблёскиваешь', 9),
-  singular3rdPerson: Word('поблёскивает', 9),
-  plural1stPerson: Word('поблёскиваем', 9),
-  plural2ndPerson: Word('поблёскиваете', 9),
-  plural3rdPerson: Word('поблёскивают', 9),
-  masculinePast: Word('поблёскивал', 9),
-  femininePast: Word('поблёскивала', 9),
-  neuterPast: Word('поблёскивало', 9),
-  pluralPast: Word('поблёскивали', 9),
-  imperativeInformal: Word('поблёскивай', 9),
-  imperativeFormal: Word('поблёскивайте', 9),
+  name: Word('поблёскивать', 4),
+  singular1stPerson: Word('поблёскиваю', 4),
+  singular2ndPerson: Word('поблёскиваешь', 4),
+  singular3rdPerson: Word('поблёскивает', 4),
+  plural1stPerson: Word('поблёскиваем', 4),
+  plural2ndPerson: Word('поблёскиваете', 4),
+  plural3rdPerson: Word('поблёскивают', 4),
+  masculinePast: Word('поблёскивал', 4),
+  femininePast: Word('поблёскивала', 4),
+  neuterPast: Word('поблёскивало', 4),
+  pluralPast: Word('поблёскивали', 4),
+  imperativeInformal: Word('поблёскивай', 4),
+  imperativeFormal: Word('поблёскивайте', 4),
   imperfect: [],
 };
 

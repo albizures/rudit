@@ -8,7 +8,7 @@ const шить: PerfectVerb = {
   singular2ndPerson: Word('шьёшь', 2),
   singular3rdPerson: Word('шьёт', 2),
   plural1stPerson: Word('шьём', 2),
-  plural2ndPerson: Word('шьёте', 4),
+  plural2ndPerson: Word('шьёте', 2),
   plural3rdPerson: Word('шьют', 2),
   masculinePast: Word('шил', 1),
   femininePast: Word('шила', 1),

@@ -8,7 +8,7 @@ const выгнуть: PerfectVerb = {
   singular2ndPerson: Word('выгнёшь', 4),
   singular3rdPerson: Word('выгнёт', 4),
   plural1stPerson: Word('выгнём', 4),
-  plural2ndPerson: Word('выгнёте', 6),
+  plural2ndPerson: Word('выгнёте', 4),
   plural3rdPerson: Word('выгнут', 4),
   masculinePast: Word('выгнул', 1),
   femininePast: Word('выгнула', 1),

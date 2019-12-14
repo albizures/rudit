@@ -8,7 +8,7 @@ const пырнуть: PerfectVerb = {
   singular2ndPerson: Word('пырнёшь', 4),
   singular3rdPerson: Word('пырнёт', 4),
   plural1stPerson: Word('пырнём', 4),
-  plural2ndPerson: Word('пырнёте', 6),
+  plural2ndPerson: Word('пырнёте', 4),
   plural3rdPerson: Word('пырнут', 4),
   masculinePast: Word('пырнул', 4),
   femininePast: Word('пырнула', 4),

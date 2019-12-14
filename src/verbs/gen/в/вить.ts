@@ -8,7 +8,7 @@ const вить: PerfectVerb = {
   singular2ndPerson: Word('вьёшь', 2),
   singular3rdPerson: Word('вьёт', 2),
   plural1stPerson: Word('вьём', 2),
-  plural2ndPerson: Word('вьёте', 4),
+  plural2ndPerson: Word('вьёте', 2),
   plural3rdPerson: Word('вьют', 2),
   masculinePast: Word('вил', 1),
   femininePast: Word('вила', 3),

@@ -8,7 +8,7 @@ const пыхнуть: PerfectVerb = {
   singular2ndPerson: Word('пыхнёшь', 4),
   singular3rdPerson: Word('пыхнёт', 4),
   plural1stPerson: Word('пыхнём', 4),
-  plural2ndPerson: Word('пыхнёте', 6),
+  plural2ndPerson: Word('пыхнёте', 4),
   plural3rdPerson: Word('пыхнут', 4),
   masculinePast: Word('пыхнул', 4),
   femininePast: Word('пыхнула', 4),

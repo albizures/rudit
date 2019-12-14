@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const отхлёбывать: PerfectVerb = {
-  name: Word('отхлёбывать', 8),
-  singular1stPerson: Word('отхлёбываю', 8),
-  singular2ndPerson: Word('отхлёбываешь', 8),
-  singular3rdPerson: Word('отхлёбывает', 8),
-  plural1stPerson: Word('отхлёбываем', 8),
-  plural2ndPerson: Word('отхлёбываете', 8),
-  plural3rdPerson: Word('отхлёбывают', 8),
-  masculinePast: Word('отхлёбывал', 8),
-  femininePast: Word('отхлёбывала', 8),
-  neuterPast: Word('отхлёбывало', 8),
-  pluralPast: Word('отхлёбывали', 8),
-  imperativeInformal: Word('отхлёбывай', 8),
-  imperativeFormal: Word('отхлёбывайте', 8),
+  name: Word('отхлёбывать', 4),
+  singular1stPerson: Word('отхлёбываю', 4),
+  singular2ndPerson: Word('отхлёбываешь', 4),
+  singular3rdPerson: Word('отхлёбывает', 4),
+  plural1stPerson: Word('отхлёбываем', 4),
+  plural2ndPerson: Word('отхлёбываете', 4),
+  plural3rdPerson: Word('отхлёбывают', 4),
+  masculinePast: Word('отхлёбывал', 4),
+  femininePast: Word('отхлёбывала', 4),
+  neuterPast: Word('отхлёбывало', 4),
+  pluralPast: Word('отхлёбывали', 4),
+  imperativeInformal: Word('отхлёбывай', 4),
+  imperativeFormal: Word('отхлёбывайте', 4),
   imperfect: [],
 };
 

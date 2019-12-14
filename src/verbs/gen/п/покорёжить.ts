@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const покорёжить: PerfectVerb = {
-  name: Word('покорёжить', 7),
-  singular1stPerson: Word('покорёжу', 1),
-  singular2ndPerson: Word('покорёжишь', 7),
-  singular3rdPerson: Word('покорёжит', 7),
-  plural1stPerson: Word('покорёжим', 7),
-  plural2ndPerson: Word('покорёжите', 9),
-  plural3rdPerson: Word('покорёжат', 7),
-  masculinePast: Word('покорёжил', 7),
-  femininePast: Word('покорёжила', 9),
-  neuterPast: Word('покорёжило', 7),
-  pluralPast: Word('покорёжили', 7),
-  imperativeInformal: Word('покорёжь', 1),
-  imperativeFormal: Word('покорёжьте', 9),
+  name: Word('покорёжить', 5),
+  singular1stPerson: Word('покорёжу', 5),
+  singular2ndPerson: Word('покорёжишь', 5),
+  singular3rdPerson: Word('покорёжит', 5),
+  plural1stPerson: Word('покорёжим', 5),
+  plural2ndPerson: Word('покорёжите', 5),
+  plural3rdPerson: Word('покорёжат', 5),
+  masculinePast: Word('покорёжил', 5),
+  femininePast: Word('покорёжила', 5),
+  neuterPast: Word('покорёжило', 5),
+  pluralPast: Word('покорёжили', 5),
+  imperativeInformal: Word('покорёжь', 5),
+  imperativeFormal: Word('покорёжьте', 5),
   imperfect: [],
 };
 

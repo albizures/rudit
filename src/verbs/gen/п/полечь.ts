@@ -10,7 +10,7 @@ const полечь: PerfectVerb = {
   plural1stPerson: Word('поляжем', 3),
   plural2ndPerson: Word('поляжете', 3),
   plural3rdPerson: Word('полягут', 3),
-  masculinePast: Word('полёг', 1),
+  masculinePast: Word('полёг', 3),
   femininePast: Word('полегла', 6),
   neuterPast: Word('полегло', 6),
   pluralPast: Word('полегли', 6),

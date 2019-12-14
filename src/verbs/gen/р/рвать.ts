@@ -8,7 +8,7 @@ const рвать: PerfectVerb = {
   singular2ndPerson: Word('рвёшь', 2),
   singular3rdPerson: Word('рвёт', 2),
   plural1stPerson: Word('рвём', 2),
-  plural2ndPerson: Word('рвёте', 4),
+  plural2ndPerson: Word('рвёте', 2),
   plural3rdPerson: Word('рвут', 2),
   masculinePast: Word('рвал', 2),
   femininePast: Word('рвала', 4),

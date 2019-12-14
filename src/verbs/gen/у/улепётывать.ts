@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const улепётывать: PerfectVerb = {
-  name: Word('улепётывать', 8),
-  singular1stPerson: Word('улепётываю', 8),
-  singular2ndPerson: Word('улепётываешь', 8),
-  singular3rdPerson: Word('улепётывает', 8),
-  plural1stPerson: Word('улепётываем', 8),
-  plural2ndPerson: Word('улепётываете', 8),
-  plural3rdPerson: Word('улепётывают', 8),
-  masculinePast: Word('улепётывал', 8),
-  femininePast: Word('улепётывала', 8),
-  neuterPast: Word('улепётывало', 8),
-  pluralPast: Word('улепётывали', 8),
-  imperativeInformal: Word('улепётывай', 8),
-  imperativeFormal: Word('улепётывайте', 8),
+  name: Word('улепётывать', 4),
+  singular1stPerson: Word('улепётываю', 4),
+  singular2ndPerson: Word('улепётываешь', 4),
+  singular3rdPerson: Word('улепётывает', 4),
+  plural1stPerson: Word('улепётываем', 4),
+  plural2ndPerson: Word('улепётываете', 4),
+  plural3rdPerson: Word('улепётывают', 4),
+  masculinePast: Word('улепётывал', 4),
+  femininePast: Word('улепётывала', 4),
+  neuterPast: Word('улепётывало', 4),
+  pluralPast: Word('улепётывали', 4),
+  imperativeInformal: Word('улепётывай', 4),
+  imperativeFormal: Word('улепётывайте', 4),
   imperfect: [],
 };
 

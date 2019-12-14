@@ -8,7 +8,7 @@ const ржать: PerfectVerb = {
   singular2ndPerson: Word('ржёшь', 2),
   singular3rdPerson: Word('ржёт', 2),
   plural1stPerson: Word('ржём', 2),
-  plural2ndPerson: Word('ржёте', 4),
+  plural2ndPerson: Word('ржёте', 2),
   plural3rdPerson: Word('ржут', 2),
   masculinePast: Word('ржал', 2),
   femininePast: Word('ржала', 2),

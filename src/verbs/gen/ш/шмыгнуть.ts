@@ -8,7 +8,7 @@ const шмыгнуть: PerfectVerb = {
   singular2ndPerson: Word('шмыгнёшь', 5),
   singular3rdPerson: Word('шмыгнёт', 5),
   plural1stPerson: Word('шмыгнём', 5),
-  plural2ndPerson: Word('шмыгнёте', 7),
+  plural2ndPerson: Word('шмыгнёте', 5),
   plural3rdPerson: Word('шмыгнут', 5),
   masculinePast: Word('шмыгнул', 5),
   femininePast: Word('шмыгнула', 5),

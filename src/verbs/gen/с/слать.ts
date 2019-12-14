@@ -8,7 +8,7 @@ const слать: PerfectVerb = {
   singular2ndPerson: Word('шлёшь', 2),
   singular3rdPerson: Word('шлёт', 2),
   plural1stPerson: Word('шлём', 2),
-  plural2ndPerson: Word('шлёте', 4),
+  plural2ndPerson: Word('шлёте', 2),
   plural3rdPerson: Word('шлют', 2),
   masculinePast: Word('слал', 2),
   femininePast: Word('слала', 2),

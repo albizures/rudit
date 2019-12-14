@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const подёргиваться: PerfectVerb = {
-  name: Word('подёргиваться', 8),
-  singular1stPerson: Word('подёргиваюсь', 8),
-  singular2ndPerson: Word('подёргиваешься', 8),
-  singular3rdPerson: Word('подёргивается', 8),
-  plural1stPerson: Word('подёргиваемся', 8),
-  plural2ndPerson: Word('подёргиваетесь', 8),
-  plural3rdPerson: Word('подёргиваются', 8),
-  masculinePast: Word('подёргивался', 8),
-  femininePast: Word('подёргивалась', 8),
-  neuterPast: Word('подёргивалось', 8),
-  pluralPast: Word('подёргивались', 8),
-  imperativeInformal: Word('подёргивайся', 8),
-  imperativeFormal: Word('подёргивайтесь', 8),
+  name: Word('подёргиваться', 3),
+  singular1stPerson: Word('подёргиваюсь', 3),
+  singular2ndPerson: Word('подёргиваешься', 3),
+  singular3rdPerson: Word('подёргивается', 3),
+  plural1stPerson: Word('подёргиваемся', 3),
+  plural2ndPerson: Word('подёргиваетесь', 3),
+  plural3rdPerson: Word('подёргиваются', 3),
+  masculinePast: Word('подёргивался', 3),
+  femininePast: Word('подёргивалась', 3),
+  neuterPast: Word('подёргивалось', 3),
+  pluralPast: Word('подёргивались', 3),
+  imperativeInformal: Word('подёргивайся', 3),
+  imperativeFormal: Word('подёргивайтесь', 3),
   imperfect: [],
 };
 

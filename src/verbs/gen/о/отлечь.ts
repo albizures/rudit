@@ -10,7 +10,7 @@ const отлечь: PerfectVerb = {
   plural1stPerson: Word('отляжем', 3),
   plural2ndPerson: Word('отляжете', 3),
   plural3rdPerson: Word('отлягут', 3),
-  masculinePast: Word('отлёг', 0),
+  masculinePast: Word('отлёг', 3),
   femininePast: Word('отлегла', 6),
   neuterPast: Word('отлегло', 6),
   pluralPast: Word('отлегли', 6),

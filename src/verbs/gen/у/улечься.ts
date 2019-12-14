@@ -10,7 +10,7 @@ const улечься: PerfectVerb = {
   plural1stPerson: Word('уляжемся', 2),
   plural2ndPerson: Word('уляжетесь', 2),
   plural3rdPerson: Word('улягутся', 2),
-  masculinePast: Word('улёгся', 5),
+  masculinePast: Word('улёгся', 2),
   femininePast: Word('улеглась', 5),
   neuterPast: Word('улеглось', 5),
   pluralPast: Word('улеглись', 5),

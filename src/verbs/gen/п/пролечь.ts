@@ -10,7 +10,7 @@ const пролечь: PerfectVerb = {
   plural1stPerson: Word('проляжем', 4),
   plural2ndPerson: Word('проляжете', 4),
   plural3rdPerson: Word('пролягут', 4),
-  masculinePast: Word('пролёг', 2),
+  masculinePast: Word('пролёг', 4),
   femininePast: Word('пролегла', 7),
   neuterPast: Word('пролегло', 7),
   pluralPast: Word('пролегли', 7),

@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const поблёкнуть: PerfectVerb = {
-  name: Word('поблёкнуть', 1),
-  singular1stPerson: Word('поблёкну', 1),
-  singular2ndPerson: Word('поблёкнешь', 7),
-  singular3rdPerson: Word('поблёкнет', 7),
-  plural1stPerson: Word('поблёкнем', 7),
-  plural2ndPerson: Word('поблёкнете', 7),
-  plural3rdPerson: Word('поблёкнут', 1),
-  masculinePast: Word('поблёк', 1),
-  femininePast: Word('поблёкла', 7),
-  neuterPast: Word('поблёкло', 1),
-  pluralPast: Word('поблёкли', 7),
-  imperativeInformal: Word('поблёкни', 7),
-  imperativeFormal: Word('поблёкните', 9),
+  name: Word('поблёкнуть', 4),
+  singular1stPerson: Word('поблёкну', 4),
+  singular2ndPerson: Word('поблёкнешь', 4),
+  singular3rdPerson: Word('поблёкнет', 4),
+  plural1stPerson: Word('поблёкнем', 4),
+  plural2ndPerson: Word('поблёкнете', 4),
+  plural3rdPerson: Word('поблёкнут', 4),
+  masculinePast: Word('поблёк', 4),
+  femininePast: Word('поблёкла', 4),
+  neuterPast: Word('поблёкло', 4),
+  pluralPast: Word('поблёкли', 4),
+  imperativeInformal: Word('поблёкни', 4),
+  imperativeFormal: Word('поблёкните', 4),
   imperfect: [],
 };
 

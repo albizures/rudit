@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const увёртываться: PerfectVerb = {
-  name: Word('увёртываться', 7),
-  singular1stPerson: Word('увёртываюсь', 7),
-  singular2ndPerson: Word('увёртываешься', 7),
-  singular3rdPerson: Word('увёртывается', 7),
-  plural1stPerson: Word('увёртываемся', 7),
-  plural2ndPerson: Word('увёртываетесь', 7),
-  plural3rdPerson: Word('увёртываются', 7),
-  masculinePast: Word('увёртывался', 7),
-  femininePast: Word('увёртывалась', 7),
-  neuterPast: Word('увёртывалось', 7),
-  pluralPast: Word('увёртывались', 7),
-  imperativeInformal: Word('увёртывайся', 7),
-  imperativeFormal: Word('увёртывайтесь', 7),
+  name: Word('увёртываться', 2),
+  singular1stPerson: Word('увёртываюсь', 2),
+  singular2ndPerson: Word('увёртываешься', 2),
+  singular3rdPerson: Word('увёртывается', 2),
+  plural1stPerson: Word('увёртываемся', 2),
+  plural2ndPerson: Word('увёртываетесь', 2),
+  plural3rdPerson: Word('увёртываются', 2),
+  masculinePast: Word('увёртывался', 2),
+  femininePast: Word('увёртывалась', 2),
+  neuterPast: Word('увёртывалось', 2),
+  pluralPast: Word('увёртывались', 2),
+  imperativeInformal: Word('увёртывайся', 2),
+  imperativeFormal: Word('увёртывайтесь', 2),
   imperfect: [],
 };
 

@@ -8,7 +8,7 @@ const бить: PerfectVerb = {
   singular2ndPerson: Word('бьёшь', 2),
   singular3rdPerson: Word('бьёт', 2),
   plural1stPerson: Word('бьём', 2),
-  plural2ndPerson: Word('бьёте', 4),
+  plural2ndPerson: Word('бьёте', 2),
   plural3rdPerson: Word('бьют', 2),
   masculinePast: Word('бил', 1),
   femininePast: Word('била', 1),

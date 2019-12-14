@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const щёлкать: PerfectVerb = {
-  name: Word('щёлкать', 4),
-  singular1stPerson: Word('щёлкаю', 4),
-  singular2ndPerson: Word('щёлкаешь', 4),
-  singular3rdPerson: Word('щёлкает', 4),
-  plural1stPerson: Word('щёлкаем', 4),
-  plural2ndPerson: Word('щёлкаете', 4),
-  plural3rdPerson: Word('щёлкают', 4),
-  masculinePast: Word('щёлкал', 4),
-  femininePast: Word('щёлкала', 4),
-  neuterPast: Word('щёлкало', 4),
-  pluralPast: Word('щёлкали', 4),
-  imperativeInformal: Word('щёлкай', 4),
-  imperativeFormal: Word('щёлкайте', 4),
+  name: Word('щёлкать', 1),
+  singular1stPerson: Word('щёлкаю', 1),
+  singular2ndPerson: Word('щёлкаешь', 1),
+  singular3rdPerson: Word('щёлкает', 1),
+  plural1stPerson: Word('щёлкаем', 1),
+  plural2ndPerson: Word('щёлкаете', 1),
+  plural3rdPerson: Word('щёлкают', 1),
+  masculinePast: Word('щёлкал', 1),
+  femininePast: Word('щёлкала', 1),
+  neuterPast: Word('щёлкало', 1),
+  pluralPast: Word('щёлкали', 1),
+  imperativeInformal: Word('щёлкай', 1),
+  imperativeFormal: Word('щёлкайте', 1),
   imperfect: [],
 };
 

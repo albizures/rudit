@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const промёрзнуть: PerfectVerb = {
-  name: Word('промёрзнуть', 2),
-  singular1stPerson: Word('промёрзну', 2),
-  singular2ndPerson: Word('промёрзнешь', 8),
-  singular3rdPerson: Word('промёрзнет', 8),
-  plural1stPerson: Word('промёрзнем', 8),
-  plural2ndPerson: Word('промёрзнете', 8),
-  plural3rdPerson: Word('промёрзнут', 2),
-  masculinePast: Word('промёрз', 2),
-  femininePast: Word('промёрзла', 8),
-  neuterPast: Word('промёрзло', 2),
-  pluralPast: Word('промёрзли', 8),
-  imperativeInformal: Word('промёрзни', 8),
-  imperativeFormal: Word('промёрзните', 10),
+  name: Word('промёрзнуть', 4),
+  singular1stPerson: Word('промёрзну', 4),
+  singular2ndPerson: Word('промёрзнешь', 4),
+  singular3rdPerson: Word('промёрзнет', 4),
+  plural1stPerson: Word('промёрзнем', 4),
+  plural2ndPerson: Word('промёрзнете', 4),
+  plural3rdPerson: Word('промёрзнут', 4),
+  masculinePast: Word('промёрз', 4),
+  femininePast: Word('промёрзла', 4),
+  neuterPast: Word('промёрзло', 4),
+  pluralPast: Word('промёрзли', 4),
+  imperativeInformal: Word('промёрзни', 4),
+  imperativeFormal: Word('промёрзните', 4),
   imperfect: [],
 };
 

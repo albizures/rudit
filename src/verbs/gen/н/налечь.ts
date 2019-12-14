@@ -10,7 +10,7 @@ const налечь: PerfectVerb = {
   plural1stPerson: Word('наляжем', 3),
   plural2ndPerson: Word('наляжете', 3),
   plural3rdPerson: Word('налягут', 3),
-  masculinePast: Word('налёг', 1),
+  masculinePast: Word('налёг', 3),
   femininePast: Word('налегла', 6),
   neuterPast: Word('налегло', 6),
   pluralPast: Word('налегли', 6),

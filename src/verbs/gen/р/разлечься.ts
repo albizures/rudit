@@ -10,7 +10,7 @@ const разлечься: PerfectVerb = {
   plural1stPerson: Word('разляжемся', 4),
   plural2ndPerson: Word('разляжетесь', 4),
   plural3rdPerson: Word('разлягутся', 4),
-  masculinePast: Word('разлёгся', 1),
+  masculinePast: Word('разлёгся', 4),
   femininePast: Word('разлеглась', 7),
   neuterPast: Word('разлеглось', 7),
   pluralPast: Word('разлеглись', 7),

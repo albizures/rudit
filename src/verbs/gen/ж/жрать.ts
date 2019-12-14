@@ -8,7 +8,7 @@ const жрать: PerfectVerb = {
   singular2ndPerson: Word('жрёшь', 2),
   singular3rdPerson: Word('жрёт', 2),
   plural1stPerson: Word('жрём', 2),
-  plural2ndPerson: Word('жрёте', 4),
+  plural2ndPerson: Word('жрёте', 2),
   plural3rdPerson: Word('жрут', 2),
   masculinePast: Word('жрал', 2),
   femininePast: Word('жрала', 4),

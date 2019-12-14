@@ -8,7 +8,7 @@ const гнуть: PerfectVerb = {
   singular2ndPerson: Word('гнёшь', 2),
   singular3rdPerson: Word('гнёт', 2),
   plural1stPerson: Word('гнём', 2),
-  plural2ndPerson: Word('гнёте', 4),
+  plural2ndPerson: Word('гнёте', 2),
   plural3rdPerson: Word('гнут', 2),
   masculinePast: Word('гнул', 2),
   femininePast: Word('гнула', 2),

@@ -3,19 +3,19 @@ import { Word } from '../../../utils/Word';
 import { perfectVerbs } from '../../map';
 
 const пристёгивать: PerfectVerb = {
-  name: Word('пристёгивать', 9),
-  singular1stPerson: Word('пристёгиваю', 9),
-  singular2ndPerson: Word('пристёгиваешь', 9),
-  singular3rdPerson: Word('пристёгивает', 9),
-  plural1stPerson: Word('пристёгиваем', 9),
-  plural2ndPerson: Word('пристёгиваете', 9),
-  plural3rdPerson: Word('пристёгивают', 9),
-  masculinePast: Word('пристёгивал', 9),
-  femininePast: Word('пристёгивала', 9),
-  neuterPast: Word('пристёгивало', 9),
-  pluralPast: Word('пристёгивали', 9),
-  imperativeInformal: Word('пристёгивай', 9),
-  imperativeFormal: Word('пристёгивайте', 9),
+  name: Word('пристёгивать', 5),
+  singular1stPerson: Word('пристёгиваю', 5),
+  singular2ndPerson: Word('пристёгиваешь', 5),
+  singular3rdPerson: Word('пристёгивает', 5),
+  plural1stPerson: Word('пристёгиваем', 5),
+  plural2ndPerson: Word('пристёгиваете', 5),
+  plural3rdPerson: Word('пристёгивают', 5),
+  masculinePast: Word('пристёгивал', 5),
+  femininePast: Word('пристёгивала', 5),
+  neuterPast: Word('пристёгивало', 5),
+  pluralPast: Word('пристёгивали', 5),
+  imperativeInformal: Word('пристёгивай', 5),
+  imperativeFormal: Word('пристёгивайте', 5),
   imperfect: [],
 };
 

@@ -8,7 +8,7 @@ const жать: PerfectVerb = {
   singular2ndPerson: Word('жмёшь', 2),
   singular3rdPerson: Word('жмёт', 2),
   plural1stPerson: Word('жмём', 2),
-  plural2ndPerson: Word('жмёте', 4),
+  plural2ndPerson: Word('жмёте', 2),
   plural3rdPerson: Word('жмут', 2),
   masculinePast: Word('жал', 1),
   femininePast: Word('жала', 1),
