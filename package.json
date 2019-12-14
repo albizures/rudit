@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "get:verb": "ts-node --project scripts/tsconfig.json scripts/get-verb.ts",
-    "get:noun": "ts-node --project scripts/tsconfig.json scripts/get-noun.ts"
+    "get:noun": "ts-node --project scripts/tsconfig.json scripts/get-noun.ts",
+    "gen:verbs": "ts-node --project scripts/tsconfig.json scripts/gen-verbs.ts"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.4.1",
