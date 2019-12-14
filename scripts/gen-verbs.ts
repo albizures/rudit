@@ -182,10 +182,10 @@ const generateFiles = async () => {
 
     if (!importsByLetter[letter]) {
       importsByLetter[letter] = [];
-      await fs.promises.mkdir(`./src/verbs/gen/${name[0]}`);
+      // await fs.promises.mkdir(`./src/verbs/gen/${name[0]}`);
     }
 
-    importsByLetter[letter].push(`export * from './${name}.ts;'\n`);
+    importsByLetter[letter].push(`export * from './${name}.ts';\n`);
 
     await generateVerbFile(name, verb);
   }
@@ -194,9 +194,9 @@ const generateFiles = async () => {
     const letter = name[0];
     if (!importsByLetter[letter]) {
       importsByLetter[letter] = [];
-      await fs.promises.mkdir(`./src/verbs/gen/${name[0]}`);
+      // await fs.promises.mkdir(`./src/verbs/gen/${name[0]}`);
     }
-    importsByLetter[letter].push(`export * from './${name}.ts;'\n`);
+    importsByLetter[letter].push(`export * from './${name}.ts';\n`);
     await generatePerfectVerbFile(name, verb);
   }
 
@@ -212,7 +212,7 @@ const generateFiles = async () => {
   );
 
   const content = letters.map((letter) => {
-    return `export * from './src/verbs/gen/${letter}/index.ts'\n`;
+    return `export * from './${letter}/index.ts'\n`;
   });
 
   await fs.promises.writeFile('./src/verbs/gen/index.ts', content.join(''));

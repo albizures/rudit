@@ -34,7 +34,7 @@ export interface Verb {
   perfect: string[];
 }
 
-export const verbConjugations: (keyof Verb)[] = [
+export const verbConjugations = [
   'singular1stPerson',
   'singular2ndPerson',
   'singular3rdPerson',
