@@ -2,3 +2,4 @@ node_modules
 .next
 src/**/*-gen.ts
 src/**/*-gen.ts
+out
