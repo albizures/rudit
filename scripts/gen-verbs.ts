@@ -1,7 +1,7 @@
-import fs from 'fs';
-import { Verb, PerfectVerb } from '../src/utils/Verb';
-import { Word } from '../src/utils/Word';
+import { getConnection } from '../src/utils/db';
 import verbs from '../converted.json';
+import { Word } from '../src/entities/word';
+import { ImperfectVerb, PerfectVerb } from '../src/entities/verb';
 
 enum Aspects {
   perfective = 'perfective',
@@ -48,174 +48,132 @@ const getStress = (text: string): number => {
   return -1;
 };
 
-const removeStress = (text: string) => text.replace(stress, '');
+const removeStress = (text: string) => text.replace(stress, '').replace(stress, '');
 
-const createWord = (text: string): Word => ({
-  text: removeStress(text),
-  stress: getStress(text),
-});
+const createWord = async (raw: string): Promise<Word> => {
+  const connection = await getConnection();
+  const repository = connection.getRepository(Word);
+  const text = raw.split('//')[0].split(',')[0];
+  const word = new Word();
 
-const createVerb = (raw: RawVerb): Verb => ({
-  name: createWord(raw.accented),
-  singular1stPerson: createWord(raw.presfut_sg1),
-  singular2ndPerson: createWord(raw.presfut_sg2),
-  singular3rdPerson: createWord(raw.presfut_sg3),
-  plural1stPerson: createWord(raw.presfut_pl1),
-  plural2ndPerson: createWord(raw.presfut_pl2),
-  plural3rdPerson: createWord(raw.presfut_pl3),
-  masculinePast: createWord(raw.past_m),
-  femininePast: createWord(raw.past_f),
-  pluralPast: createWord(raw.past_pl),
-  neuterPast: createWord(raw.past_n),
-  imperativeInformal: createWord(raw.imperative_sg),
-  imperativeFormal: createWord(raw.imperative_pl),
-  perfect: raw.partner.split(';').filter(Boolean),
-});
+  word.text = removeStress(text);
+  word.stress = getStress(text);
 
-const createPerfectVerb = (raw: RawVerb): PerfectVerb => ({
-  name: createWord(raw.accented),
-  singular1stPerson: createWord(raw.presfut_sg1),
-  singular2ndPerson: createWord(raw.presfut_sg2),
-  singular3rdPerson: createWord(raw.presfut_sg3),
-  plural1stPerson: createWord(raw.presfut_pl1),
-  plural2ndPerson: createWord(raw.presfut_pl2),
-  plural3rdPerson: createWord(raw.presfut_pl3),
-  masculinePast: createWord(raw.past_m),
-  femininePast: createWord(raw.past_f),
-  pluralPast: createWord(raw.past_pl),
-  neuterPast: createWord(raw.past_n),
-  imperativeInformal: createWord(raw.imperative_sg),
-  imperativeFormal: createWord(raw.imperative_pl),
-  imperfect: raw.partner.split(';').filter(Boolean),
-});
+  await repository.save(word);
 
-const parseVerbs = () => {
-  const imperfects = new Map<string, Verb>();
-  const perfects = new Map<string, PerfectVerb>();
+  return word;
+};
 
-  (verbs as RawVerb[]).forEach((raw) => {
-    if (raw.aspect === Aspects.imperfective) {
-      const incompleted = createVerb(raw);
-      imperfects.set(incompleted.name.text, incompleted);
-    }
+interface ReturnCreateImperfectVerb {
+  verb: ImperfectVerb;
+  name: string;
+  partners: string[];
+}
 
-    const incompleted = createPerfectVerb(raw);
-    perfects.set(incompleted.name.text, incompleted);
-  });
+const createImperfectVerb = async (raw: RawVerb): Promise<ReturnCreateImperfectVerb> => {
+  const connection = await getConnection();
+  const repository = connection.getRepository(ImperfectVerb);
+  const verb = new ImperfectVerb();
+
+  verb.name = await createWord(raw.accented);
+  verb.singular1stPerson = await createWord(raw.presfut_sg1);
+  verb.singular2ndPerson = await createWord(raw.presfut_sg2);
+  verb.singular3rdPerson = await createWord(raw.presfut_sg3);
+  verb.plural1stPerson = await createWord(raw.presfut_pl1);
+  verb.plural2ndPerson = await createWord(raw.presfut_pl2);
+  verb.plural3rdPerson = await createWord(raw.presfut_pl3);
+  verb.masculinePast = await createWord(raw.past_m);
+  verb.femininePast = await createWord(raw.past_f);
+  verb.pluralPast = await createWord(raw.past_pl);
+  verb.neuterPast = await createWord(raw.past_n);
+  verb.imperativeInformal = await createWord(raw.imperative_sg);
+  verb.imperativeFormal = await createWord(raw.imperative_pl);
+  verb.perfects = [];
+
+  await repository.save(verb);
 
   return {
-    imperfects,
-    perfects,
+    verb,
+    name: raw.bare,
+    partners: raw.partner.split(';').filter(Boolean),
   };
 };
 
-const generatePerfectVerbFile = async (name: string, verb: PerfectVerb) => {
-  const filename = `./src/verbs/gen/${name[0]}/${name}.ts`;
-  const fileContent = `import { PerfectVerb } from '../../../utils/Verb';
-import { Word } from '../../../utils/Word';
-import { perfectVerbs } from '../../map';
-
-const ${name}: PerfectVerb = {
-  name: Word('${verb.name.text}', ${verb.name.stress}),
-  singular1stPerson: Word('${verb.singular1stPerson.text}', ${verb.singular1stPerson.stress}),
-  singular2ndPerson: Word('${verb.singular2ndPerson.text}', ${verb.singular2ndPerson.stress}),
-  singular3rdPerson: Word('${verb.singular3rdPerson.text}', ${verb.singular3rdPerson.stress}),
-  plural1stPerson: Word('${verb.plural1stPerson.text}', ${verb.plural1stPerson.stress}),
-  plural2ndPerson: Word('${verb.plural2ndPerson.text}', ${verb.plural2ndPerson.stress}),
-  plural3rdPerson: Word('${verb.plural3rdPerson.text}', ${verb.plural3rdPerson.stress}),
-  masculinePast: Word('${verb.masculinePast.text}', ${verb.masculinePast.stress}),
-  femininePast: Word('${verb.femininePast.text}', ${verb.femininePast.stress}),
-  neuterPast: Word('${verb.neuterPast.text}', ${verb.neuterPast.stress}),
-  pluralPast: Word('${verb.pluralPast.text}', ${verb.pluralPast.stress}),
-  imperativeInformal: Word('${verb.imperativeInformal.text}', ${verb.imperativeInformal.stress}),
-  imperativeFormal: Word('${verb.imperativeFormal.text}', ${verb.imperativeFormal.stress}),
-  imperfect: [${verb.imperfect.map((i) => `'${i}'`)}],
-};
-
-perfectVerbs.set(${name}.name.text, ${name});
-
-export { ${name} };`;
-
-  await fs.promises.writeFile(filename, fileContent);
-};
-
-const generateVerbFile = async (name: string, verb: Verb) => {
-  const filename = `./src/verbs/gen/${name[0]}/${name}.ts`;
-  const fileContent = `import { Verb } from '../../../utils/Verb';
-import { Word } from '../../../utils/Word';
-import { verbs } from '../../map';
-
-const ${name}: Verb = {
-  name: Word('${verb.name.text}', ${verb.name.stress}),
-  singular1stPerson: Word('${verb.singular1stPerson.text}', ${verb.singular1stPerson.stress}),
-  singular2ndPerson: Word('${verb.singular2ndPerson.text}', ${verb.singular2ndPerson.stress}),
-  singular3rdPerson: Word('${verb.singular3rdPerson.text}', ${verb.singular3rdPerson.stress}),
-  plural1stPerson: Word('${verb.plural1stPerson.text}', ${verb.plural1stPerson.stress}),
-  plural2ndPerson: Word('${verb.plural2ndPerson.text}', ${verb.plural2ndPerson.stress}),
-  plural3rdPerson: Word('${verb.plural3rdPerson.text}', ${verb.plural3rdPerson.stress}),
-  masculinePast: Word('${verb.masculinePast.text}', ${verb.masculinePast.stress}),
-  femininePast: Word('${verb.femininePast.text}', ${verb.femininePast.stress}),
-  neuterPast: Word('${verb.neuterPast.text}', ${verb.neuterPast.stress}),
-  pluralPast: Word('${verb.pluralPast.text}', ${verb.pluralPast.stress}),
-  imperativeInformal: Word('${verb.imperativeInformal.text}', ${verb.imperativeInformal.stress}),
-  imperativeFormal: Word('${verb.imperativeFormal.text}', ${verb.imperativeFormal.stress}),
-  perfect: [${verb.perfect.map((p) => `'${p}'`)}],
-};
-
-verbs.set(${name}.name.text, ${name});
-
-export { ${name} };`;
-
-  await fs.promises.writeFile(filename, fileContent);
-};
-
-interface ImportsByLetter {
-  [key: string]: string[];
+interface ReturnCreatePerfectVerb {
+  verb: PerfectVerb;
+  name: string;
+  partners: string[];
 }
 
-const generateFiles = async () => {
-  const { imperfects, perfects } = parseVerbs();
-  const importsByLetter: ImportsByLetter = {};
+const createPerfectVerb = async (raw: RawVerb): Promise<ReturnCreatePerfectVerb> => {
+  const connection = await getConnection();
+  const repository = connection.getRepository(PerfectVerb);
+  const verb = new PerfectVerb();
 
-  for (const [name, verb] of imperfects) {
-    const letter = name[0];
+  verb.name = await createWord(raw.accented);
+  verb.singular1stPerson = await createWord(raw.presfut_sg1);
+  verb.singular2ndPerson = await createWord(raw.presfut_sg2);
+  verb.singular3rdPerson = await createWord(raw.presfut_sg3);
+  verb.plural1stPerson = await createWord(raw.presfut_pl1);
+  verb.plural2ndPerson = await createWord(raw.presfut_pl2);
+  verb.plural3rdPerson = await createWord(raw.presfut_pl3);
+  verb.masculinePast = await createWord(raw.past_m);
+  verb.femininePast = await createWord(raw.past_f);
+  verb.pluralPast = await createWord(raw.past_pl);
+  verb.neuterPast = await createWord(raw.past_n);
+  verb.imperativeInformal = await createWord(raw.imperative_sg);
+  verb.imperativeFormal = await createWord(raw.imperative_pl);
+  verb.imperfects = [];
 
-    if (!importsByLetter[letter]) {
-      importsByLetter[letter] = [];
-      // await fs.promises.mkdir(`./src/verbs/gen/${name[0]}`);
-    }
+  await repository.save(verb);
 
-    importsByLetter[letter].push(`export * from './${name}.ts';\n`);
+  return {
+    verb,
+    name: raw.bare,
+    partners: raw.partner.split(';').filter(Boolean),
+  };
+};
 
-    await generateVerbFile(name, verb);
-  }
-
-  for (const [name, verb] of perfects) {
-    const letter = name[0];
-    if (!importsByLetter[letter]) {
-      importsByLetter[letter] = [];
-      // await fs.promises.mkdir(`./src/verbs/gen/${name[0]}`);
-    }
-    importsByLetter[letter].push(`export * from './${name}.ts';\n`);
-    await generatePerfectVerbFile(name, verb);
-  }
-
-  const letters = Object.keys(importsByLetter);
+const parseVerbs = async () => {
+  const imperfects = new Map<string, ReturnCreateImperfectVerb>();
+  const perfects = new Map<string, ReturnCreatePerfectVerb>();
+  const connection = await getConnection();
+  const perfectRepository = connection.getRepository(PerfectVerb);
+  const imperfectRepository = connection.getRepository(ImperfectVerb);
 
   await Promise.all(
-    letters.map(async (letter) => {
-      const imports = importsByLetter[letter];
-      const filename = `./src/verbs/gen/${letter}/index.ts`;
-
-      await fs.promises.writeFile(filename, imports.join(''));
+    (verbs as RawVerb[]).map(async (raw) => {
+      if (raw.aspect === Aspects.imperfective) {
+        const result = await createImperfectVerb(raw);
+        imperfects.set(result.name, result);
+      } else {
+        const result = await createPerfectVerb(raw);
+        perfects.set(result.name, result);
+      }
     }),
   );
 
-  const content = letters.map((letter) => {
-    return `export * from './${letter}/index.ts'\n`;
-  });
+  for (const [, { partners, verb }] of imperfects) {
+    for (const partner of partners) {
+      if (perfects.has(partner)) {
+        verb.perfects.push(perfects.get(partner).verb);
+      }
+    }
+    await imperfectRepository.save(verb);
+  }
 
-  await fs.promises.writeFile('./src/verbs/gen/index.ts', content.join(''));
+  for (const [, { partners, verb }] of perfects) {
+    for (const partner of partners) {
+      if (imperfects.has(partner)) {
+        verb.imperfects.push(imperfects.get(partner).verb);
+      }
+    }
+    await perfectRepository.save(verb);
+  }
 };
 
-generateFiles();
+parseVerbs()
+  .catch(console.log)
+  .then(() => {
+    console.log('entds');
+  });
