@@ -17,7 +17,7 @@ export interface PerfectVerb {
   imperfect: string[];
 }
 
-export interface Verb {
+export interface ImperfectVerb {
   name: Word;
   singular1stPerson: Word;
   singular2ndPerson: Word;
